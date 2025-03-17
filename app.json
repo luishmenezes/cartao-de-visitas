@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "cartão de visitas",
+    "slug": "cartao-de-visitas",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.luishmenezes.cartaodevisitas"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.luishmenezes.cartaodevisitas"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +38,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c2be18dd-fca6-40cb-8b90-1ccb6f9db1ae"
+      }
+    },
+    "owner": "luishmenezes",
+    "updates": {
+      "url": "https://u.expo.dev/c2be18dd-fca6-40cb-8b90-1ccb6f9db1ae"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
