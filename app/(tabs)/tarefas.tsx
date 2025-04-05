@@ -34,19 +34,27 @@ export default function App() {
     };
   
     const adicionarTarefa = async () => {
+      alert('Botão pressionado!'); 
+    
       if (!descricao.trim()) return;
+    
       try {
         const Tarefa = Parse.Object.extend('Tarefa');
         const novaTarefa = new Tarefa();
         novaTarefa.set('descricao', descricao);
         novaTarefa.set('concluida', false);
         await novaTarefa.save();
+    
+        alert('Tarefa adicionada!'); 
+    
         setDescricao('');
         buscarTarefas();
       } catch (error) {
         console.error('Erro ao adicionar tarefa:', error);
+        alert('Erro: ' + JSON.stringify(error)); 
       }
     };
+    
   
     const alternarConcluida = async (tarefa: Tarefa) => {
         tarefa.set('concluida', !tarefa.get('concluida'));
