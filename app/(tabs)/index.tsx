@@ -3,6 +3,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import aleatorio from './NumAleatorio';
 import cartao from './cartaoVisitas';
+import tarefas from './tarefas';
 
 
 const Drawer = createDrawerNavigator();
@@ -26,6 +27,7 @@ export default function Layout() {
     >
       <Drawer.Screen name="AT -> Número aleatório" component={aleatorio} />
       <Drawer.Screen name="AT -> Cartão de visitas" component={cartao} />
+      <Drawer.Screen name= "AT -> Lista de tarefas" component={tarefas} />
     </Drawer.Navigator>
   );
 }
