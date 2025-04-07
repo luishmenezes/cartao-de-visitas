@@ -3,6 +3,8 @@ import Parse from 'parse/react-native';
 import React, { useEffect, useState } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 import { Button, Card, Checkbox, Text, TextInput } from 'react-native-paper';
+import 'react-native-get-random-values';
+
 
 Parse.setAsyncStorage(require('@react-native-async-storage/async-storage').default);
 Parse.initialize('M9XntrtGnh7Y4ZwmG37a9kFLiPN10iBAIDMUHWkf', 'bnCZiNuON0mWrDpjFXmnKt2kzfnrXclewgWwW9Tu');
