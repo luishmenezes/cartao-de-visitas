@@ -60,9 +60,9 @@ export default function App() {
       alert('Tarefa adicionada!');
       setDescricao('');
       buscarTarefas();
-    } catch (error) {
+    } catch (error:any ) {
       console.error('Erro ao adicionar tarefa:', error);
-      alert('Erro: ' + JSON.stringify(error));
+      alert(`Erro ao adicionar tarefa:\n${error.message || error.code || JSON.stringify(error)}`));
     }
   };
 
