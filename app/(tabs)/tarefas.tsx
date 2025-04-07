@@ -8,7 +8,7 @@ Parse.setAsyncStorage(require('@react-native-async-storage/async-storage').defau
 Parse.initialize('M9XntrtGnh7Y4ZwmG37a9kFLiPN10iBAIDMUHWkf', 'bnCZiNuON0mWrDpjFXmnKt2kzfnrXclewgWwW9Tu');
 Parse.serverURL = 'https://parseapi.back4app.com/';
 
-// 🔧 Classe Tarefa com getters e setters tipados
+
 class Tarefa extends Parse.Object {
   constructor() {
     super('Tarefa');
@@ -31,7 +31,7 @@ class Tarefa extends Parse.Object {
   }
 }
 
-// Registrar a subclasse com Parse
+
 Parse.Object.registerSubclass('Tarefa', Tarefa);
 
 export default function App() {
